@@ -1,0 +1,55 @@
+.workDaysHeader {
+    text-align: center;
+    margin-top:15px;
+    text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+    10px 20px 5px rgba(0,0,0,0.05),
+    -10px 20px 5px rgba(0,0,0,0.05);
+    font-family: 'Varela Round', sans-serif;
+}
+
+.workDays {
+    list-style-type: none;
+    text-align: center;
+}
+
+.workDays li {
+    margin-top: 20px;
+}
+
+.address {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.address h2 {
+    text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+    10px 20px 5px rgba(0,0,0,0.05),
+    -10px 20px 5px rgba(0,0,0,0.05);
+    font-family: 'Varela Round', sans-serif;
+}
+
+.address p {
+    margin-top: 20px;
+}
+
+.socialMedia {
+    margin-top: 10px;
+}
+
+.flexMedia {
+    display: flex;
+    margin-top: 20px;
+    width: 250px;
+    margin-left: 50%;
+    justify-content: space-around;
+    transform: translateX(-50%);
+}
+
+.flexMedia button {
+    border: none;
+    background: none;
+}
+.flexMedia button ion-icon {
+    color: black;
+    font-size: 48px;
+}

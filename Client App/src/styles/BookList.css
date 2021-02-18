@@ -1,0 +1,120 @@
+.bookList {
+    list-style: none;
+    text-align: center;
+    height: auto;
+    margin-top:25px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+  
+   @media(min-width: 1470px) {
+    .bookList {
+      max-width: 1380px;
+    }
+    .bookList ul {
+      flex-direction: row;
+    }
+  }
+
+  @media(max-width: 1469px) {
+    .bookList ul {
+      position: absolute;
+      left:50%;
+      transform: translateX(-50%);
+      flex-direction: column;
+    }
+  }
+
+  .selected {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+.bookList ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  img {
+    width:100px;
+    height: auto;
+  }
+
+  .bookName {
+    padding: 10px;
+  }
+
+  .authorName {
+    font-size: 24px;
+  }
+
+
+  .list {
+    font-family: 'Varela Round', sans-serif;
+    padding: 5px;
+    max-width: 200px;
+    border-radius: 20px;
+  }
+
+  .list:hover {
+    background-color: rgba(141, 141, 141, 0.275);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    transition: 0.4s;
+  }
+
+  h2 {
+    text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+    10px 20px 5px rgba(0,0,0,0.05),
+    -10px 20px 5px rgba(0,0,0,0.05);
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .selectedItem {
+    width: 400px;
+    background-color: rgb(77, 55, 128);
+    height:400px;
+    position: fixed;
+    top:50%;
+    color: white;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .authorName {
+    height: 50px;
+  }
+
+  .bookName {
+    height: 50px;
+  }
+
+  .imgBook {
+    margin-top: 30px;
+  }
+
+  .blurDiv {
+    filter: blur(4px);
+  }
+
+  .loanAction {
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: gray;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color:whitesmoke;
+    border:none;
+    cursor: pointer;
+  }
+
+  .changeBlock {
+    margin-top:10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }

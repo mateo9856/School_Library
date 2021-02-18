@@ -1,0 +1,106 @@
+.homeImage {
+    margin: 40px auto;
+    overflow: hidden;
+    width: 100%;
+    min-height:400px; 
+    background-image: url("../img/HomeImage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+::placeholder {
+    color:white;
+}
+
+.libraryPoints ul {
+    display: flex;
+    list-style: none;
+    margin-top: 50px;
+    justify-content: center;
+    
+}
+@media (max-width:999px) {
+.homeImage {
+    min-width: 100%;
+    
+}
+}
+.libraryPoints ul li {
+    max-width: 300px;
+    text-align: center;
+    padding: 20px 20px 0 20px;
+}
+
+.iconSize {
+    width: 70px;
+    height: auto;
+}
+.desc {
+    font-size: 13px;
+}
+
+.searchBox {
+    position: absolute;
+    left: 50%;
+    display: flex;
+    color: white;
+    width: 300px;
+    height:50px;
+    background-color: rgba(43, 14, 233, 0.467);
+    padding: 10px;
+    border-radius: 40px;
+    margin-top: 120px;
+    transform: translateX(-50%);
+}
+
+ion-icon {
+    font-size: 24px;
+    color: black;
+}
+.searchClick {
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    background: none;
+    top:12px;
+    right: 15px;
+    float: right;
+}
+
+.searchText {
+    background: none;
+    border: none;
+    font-size: 18px;
+    width:200px;
+    color: white;
+}
+
+.searchList {
+    width: 400px;
+    background-color: rgba(38, 119, 206, 0.446);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    overflow-y: auto;
+    height: 100px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 220px;
+}
+
+.searchList h5 {
+    text-align: center;
+    padding: 5px 0;
+    font-size:20px;
+}
+
+
+.searchExit {
+    position: absolute;
+    right: 5px;
+    top:4px;
+    background: none;
+    border:none;
+    cursor: pointer;
+}

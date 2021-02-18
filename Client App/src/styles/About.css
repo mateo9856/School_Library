@@ -1,0 +1,58 @@
+@media(max-width: 1280px) {
+    .aboutContainer {
+        max-width: 500px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .aboutContainer p {
+        width: 460px;
+    }
+}
+
+@media(min-width:1281px) {
+    .aboutContainer {
+        width: 800px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    
+    }
+    .aboutContainer p {
+        width: 760px;
+    }
+}
+ 
+hr {
+    border: none;
+    height:2px;
+    background-color: black;
+    color: black;
+ }
+
+.aboutContainer h1 {
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+                 10px 20px 5px rgba(0,0,0,0.05),
+                 -10px 20px 5px rgba(0,0,0,0.05);
+    padding-bottom: 15px;
+    margin-top: 22px;
+}
+
+.aboutContainer p {
+    margin-top:15px;
+    text-align: center;
+    margin-left:50%;
+    transform: translateX(-50%);
+}
+
+.aboutPhoto {
+    width:500px;
+    margin-top: 22px;
+    height: auto;
+    position: relative;
+    left:50%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    transform: translateX(-50%);
+}

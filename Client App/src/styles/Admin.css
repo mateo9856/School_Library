@@ -1,0 +1,75 @@
+.formAddStyle {
+    margin-top: 10px;
+}
+
+.labelStyle {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.formRemoveStyle {
+    margin-top:10px;
+}
+
+.logInForm {
+    text-align: center;
+    margin-top: 40px;
+    line-height: 25px;
+}
+
+.addInputs {
+    line-height: 30px;
+}
+
+.addInputs p {
+    padding: 20px 0;
+
+}
+
+.adminContain {
+    margin-top:20px;
+    width:500px;
+    height:500px;
+    margin-left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.adminContain button {
+    margin: 0 15px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: gray;
+    color:whitesmoke;
+    border:none;
+    cursor: pointer;
+}
+
+
+.editBlock input[type=submit] {
+    margin-top: 25px;
+    border-radius: 20px;
+    padding: 15px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+    font-weight: bold;
+}
+
+.editBlock select {
+    margin-top:15px;
+    padding: 10px;
+}
+
+.addInputs input {
+    padding: 3px;
+    margin-top: 2px;
+    position: absolute;
+    right: 60px;
+}
+
+.addInputs span {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    left:60px;
+}
