@@ -8,6 +8,7 @@ bin-release/
 _ReSharper.*
 bin
 obj
+bin/Debug
 packages
 # Other files and folders
 .settings/
