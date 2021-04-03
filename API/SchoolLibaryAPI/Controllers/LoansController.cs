@@ -11,7 +11,6 @@ using System.Threading.Tasks;
 
 namespace SchoolLibaryAPI.Controllers
 {
-    [EnableCors("AllowAllOrigins")]
     [Route("api/[controller]")]
     [ApiController]
     public class LoansController : ControllerBase

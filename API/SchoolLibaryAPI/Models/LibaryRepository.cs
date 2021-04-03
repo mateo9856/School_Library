@@ -6,8 +6,8 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace SchoolLibaryAPI.Models
-{//DZIAŁANIA NASTĘPNE: PRÓBA ZROBIENIA DTO, PRZED TYM IMPLEMENTACJA AUTOMAPPERA
-    public class LibaryRepository : ILibaryRepository//poczytac o API i jak dodac dane do entity tez
+{
+    public class LibaryRepository : ILibaryRepository
     {
 
         private readonly LibaryDbContext _dbContext;
@@ -31,7 +31,6 @@ namespace SchoolLibaryAPI.Models
         public async Task<Library> GetBook(int id)
         {
             return await _dbContext.Books.FindAsync(id);
-            //return await _dbContext.Books.FirstOrDefaultAsync(b => b.BookId == id);
         }
 
         public async Task RemoveBook(Library book)

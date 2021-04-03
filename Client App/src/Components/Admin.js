@@ -35,7 +35,6 @@ function Admin(props) {
       body: JSON.stringify(bookRequest),
     }).then((res) =>
       res.json().then((res) => {
-        console.log(res);
         if (res) {
           alert("You add a new Book!");
         }
@@ -43,7 +42,6 @@ function Admin(props) {
     );
   }
   function removeBook() {
-    console.log(id);
     fetch(`https://localhost:44383/api/Libary/${id}`, {
       method: "DELETE",
     })
@@ -59,14 +57,12 @@ function Admin(props) {
       .then((res) => res.json())
       .then((res) => {
         const checkLog = Array.from(res).find((element) => {
-          console.log(element.login === log && element.password === pass);
           return element.login === log && element.password === pass;
         });
         if (checkLog !== undefined) {
           setIsLogOn(true);
         }
-      })
-      .catch((err) => console.log(err));
+      });
   }
 
   return (

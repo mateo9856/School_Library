@@ -11,7 +11,7 @@ namespace SchoolLibaryAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class LoginsController : ControllerBase//kontynuować prace tego kontrolera
+    public class LoginsController : ControllerBase
     {
         private readonly ILoginRepository _loginRepository;
         public LoginsController(ILoginRepository loginRepository)

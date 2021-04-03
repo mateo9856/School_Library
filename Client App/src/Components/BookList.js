@@ -11,8 +11,7 @@ function getLoans(val) {
     .then((res) => res.json())
     .then((res) => {
       val(Array.from(res));
-    })
-    .catch((err) => console.log(err));
+    });
 }
 
 function BookList(props) {
@@ -32,8 +31,7 @@ function BookList(props) {
       .then((res) => res.json())
       .then((res) => {
         setLoans(Array.from(res));
-      })
-      .catch((err) => console.log(err));
+      });
   }, []);
 
   function handleClick(i) {
@@ -82,9 +80,7 @@ function BookList(props) {
       },
       body: JSON.stringify(book),
     })
-      .then((res) => res.json())
-      .then((dat) => console.log(dat))
-      .catch((err) => console.log(err));
+      .then((res) => res.json());
 
     alert("Loan Added");
     resetInputs();
@@ -95,7 +91,7 @@ function BookList(props) {
     e.preventDefault();
     fetch(`https://localhost:44383/api/Loans/${activeLoanId}`, {
       method: "DELETE",
-    }).catch((err) => console.log(err));
+    });
 
     let book = selectedBook;
     selectedBook.availableBooks++;
@@ -108,9 +104,7 @@ function BookList(props) {
       },
       body: JSON.stringify(book),
     })
-      .then((res) => res.json())
-      .then((dat) => console.log(dat))
-      .catch((err) => console.log(err));
+      .then((res) => res.json());
     alert("Book returned!");
 
     resetInputs();
@@ -122,7 +116,6 @@ function BookList(props) {
       const filterLoans = loans.filter(
         (loan) => loan.bookId === selectedBook.bookId
       );
-      console.log(filterLoans);
       if (filterLoans.length > 0) {
         return filterLoans;
       } else {
@@ -175,7 +168,6 @@ function BookList(props) {
           <button
           className = "loanAction"
             onClick={() => {
-              console.log(loans);
               try {
                 setActiveReturn(true);
               } catch (e) {

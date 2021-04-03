@@ -17,6 +17,7 @@ using System.Threading.Tasks;
 
 namespace SchoolLibaryAPI
 {
+    [EnableCors("AllowAllOrigins")]
     public class Startup
     {
         public Startup(IConfiguration configuration)

@@ -14,7 +14,7 @@ export function getDatas(value) {
     .then((res) => res.json())
     .then((data) => value(Array.from(data)))
     .catch(function () {
-      console.log("API not called");
+      throw new Error("API not called");
     });
 }
 
@@ -23,7 +23,6 @@ function App() {
   useEffect(() => {
     getDatas(setDatas);
   }, []);
-  console.log(datas);
 
   return (
     <Router>
